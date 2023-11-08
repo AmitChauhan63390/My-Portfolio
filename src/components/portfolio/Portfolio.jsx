@@ -16,18 +16,7 @@ const items = [{
     desc: "A Game to improve vocabulary with good looking interface. Created with pure HTML,CSS and JavaScript",
     redirectUrl: "https://keen-licorice-a71427.netlify.app/",
 },
-{
-    id: 3,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/4805/hiking-path-way.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam, temporibus quod aliquam enim cum harum numquam eos error, debitis consequuntur non, quas voluptatibus! Eligendi iure cumque odio commodi corporis!",
-},
-{
-    id: 4,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/4805/hiking-path-way.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam, temporibus quod aliquam enim cum harum numquam eos error, debitis consequuntur non, quas voluptatibus! Eligendi iure cumque odio commodi corporis!",
-},
+
 ];
 
 const Single = ({ item }) => {
