@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .sidebar{
     display: flex;
     justify-content: center;
@@ -12,8 +14,12 @@
         left: 0;
         bottom: 0;
         width: 400px;
+        
         background:white;
         z-index: 999;
+
+        
+
         .links{
             position: absolute;
             width: 100%;
@@ -28,6 +34,9 @@
         }
         a{
             font-size: 40px;
+            @include mobile{
+                font-size: 20px;
+            }
         }
     }
     button{

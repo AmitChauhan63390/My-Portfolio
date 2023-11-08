@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .portfolio {
     position: relative;
 
@@ -10,6 +12,14 @@
 
         color: orange;
         font-size: 36px;
+
+        @include mobile{
+            padding-top: calc(100vh - 100px);
+            font-size: 20px;
+            bottom: 0;
+
+
+        }
 
 
         .progressBar {
@@ -36,10 +46,20 @@
             display: flex;
             align-items: center;
             gap: 30px;
+            @include mobile{
+                flex-direction: column;
+            
+            }
 
             .imageContainer{
                 flex: 1;
                 height: 50%;
+                @include mobile{
+                    width: 100%;
+                    max-height: 300px;
+                    margin-top: 30px;
+            
+                }
                 img{
                     width: 100%;
                     max-height: 100%;
@@ -54,15 +74,30 @@
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                overflow: hidden;
+                @include mobile{
+                    transform: none !important;
+                    padding: 10px;
+                    align-items: center;
+                    text-align: center;
+            
+                }
+            
 
                 h2{
                 font-size: 72px;
+                @include mobile{
+                    font-size: 36px;
+            
+                }
                 }
 
                 p{
                     color: gray;
                     font-size: 20px;
+                    @include mobile{
+                        font-size: 16px;
+
+                    }
                 }
 
                 button{
