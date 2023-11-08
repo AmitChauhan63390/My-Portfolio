@@ -4,15 +4,17 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 
 const items = [{
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/4805/hiking-path-way.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam, temporibus quod aliquam enim cum harum numquam eos error, debitis consequuntur non, quas voluptatibus! Eligendi iure cumque odio commodi corporis!",
+    title: "N-Queen Visualizer",
+    img: "https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    desc: "I created a site for visualizing N-Queen Problem using backtracking for better understanding. Skills that I demonstrated are HTML, CSS and JavaScript",
+    redirectUrl: "https://genuine-horse-e73f85.netlify.app/",
 },
 {
     id: 2,
-    title: "Nextjs Commerce",
-    img: "https://images.pexels.com/photos/4805/hiking-path-way.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam, temporibus quod aliquam enim cum harum numquam eos error, debitis consequuntur non, quas voluptatibus! Eligendi iure cumque odio commodi corporis!",
+    title: "Hangman Game",
+    img: "https://as1.ftcdn.net/v2/jpg/05/53/20/12/1000_F_553201237_I9NNuEE7LfExev63xcgK0klqbwqaBsva.jpg",
+    desc: "A Game to improve vocabulary with good looking interface. Created with pure HTML,CSS and JavaScript",
+    redirectUrl: "https://keen-licorice-a71427.netlify.app/",
 },
 {
     id: 3,
@@ -40,6 +42,10 @@ const Single = ({ item }) => {
 
     const y = useTransform(scrollYProgress, [0, 1], [-1000, 1000]);
 
+    const handleRedirect = () => {
+        window.location.href = item.redirectUrl;
+      };
+
 
     return (
         <section >
@@ -55,7 +61,7 @@ const Single = ({ item }) => {
 
                         <h2 style={{ y }}>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <button onClick={handleRedirect}>See Demo</button>
 
                     </motion.div>
 
