@@ -1,39 +1,47 @@
 @import "../../app.scss";
 
-.navbar{
-    height: 100px;
-    
+.navbar {
+  height: 100px;
+  position: relative; // ensures z-index works
+  z-index: 1000; // make navbar above other content
 
-    .wrapper{
-        max-width: 1366px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 
-        @include mobile{
-            justify-content: flex-end;
-            padding: 20px;
-
-        }
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
     }
-    span{
-        font-weight: bold;
-        @include mobile{
-            display: none;
-        }
-    }
-    .social{
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        align-items: center;
+  }
 
-        img{
-            width: 18px;
-            height: 18px;
-        }
-    }
+  span {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    position: relative; // allows z-index
+    z-index: 1100; // above sidebar button
+    margin: 0 40px;
 
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+  }
 }
