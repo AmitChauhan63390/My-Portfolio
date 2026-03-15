@@ -122,7 +122,7 @@ const Hero = () => {
           </motion.h2>
           
           <motion.h1 variants={textVariants}>
-            Amit Chauhan
+            Amit Kumar Singh
           </motion.h1>
 
           <motion.p 

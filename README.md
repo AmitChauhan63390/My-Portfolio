@@ -1,4 +1,4 @@
-# Amit Chauhan — Portfolio
+# Amit Kumar Singh — Portfolio
 
 Personal portfolio and project showcase. Built with React, Vite, and Framer Motion.
 

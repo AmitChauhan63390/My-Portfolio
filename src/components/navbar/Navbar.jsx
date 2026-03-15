@@ -11,7 +11,7 @@ const Navbar = () => {
                 initial={{opacity:0,scale:0.5}} 
                 animate={{opacity:1,scale:1}}
                 transition={{duration:0.5}}
-                >Amit Chauhan</motion.span>
+                >Amit Kumar Singh</motion.span>
                 <div className="social">
                     <a href="https://github.com/AmitChauhan63390" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/facebook.png" alt="GitHub" /></a>
                     <a href="https://www.linkedin.com/in/amit-chauhan-63390" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/instagram.png" alt="LinkedIn" /></a>
