@@ -1,0 +1,75 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans",sans-serif;
+}
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+body{
+    background-color: #0c0c1d;
+    color: #e4e2de;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 162, 39, 0.08), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 50%, rgba(111, 115, 132, 0.06), transparent),
+        radial-gradient(ellipse 50% 30% at 0% 80%, rgba(111, 115, 132, 0.05), transparent),
+        linear-gradient(180deg, #0c0c1d 0%, #0f0f24 40%, #0c0c1d 100%);
+    background-attachment: fixed;
+}
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(228, 226, 222, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(228, 226, 222, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.course{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        
+    }
+}
+
+@mixin mobile{
+    @media (max-width:738px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width:1024px){
+        @content;
+    }
+}
+@mixin desktop{
+    @media (max-width:1366px){
+        @content;
+    }
+}
